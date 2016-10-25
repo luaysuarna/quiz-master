@@ -1,0 +1,6 @@
+- if notice.present?
+  = react_component 'Alert', { type: 'success', message: notice }
+- elsif alert.present?
+  = react_component 'Alert', { type: 'error', message: alert }
+- else
+  = react_component 'Alert', { type: 'success', message: '' }
